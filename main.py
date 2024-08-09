@@ -1,4 +1,5 @@
 from funcoes import *
+from main import *
 from previwer import *
 
 lista_carrinho=[]
@@ -10,7 +11,6 @@ produtitos = []
 while True:
     menu_inicial()
     opt_menu=input("[OPÇÃO]-> ")
-    # Registrar Usuário
     if opt_menu =="1":
         limpar_tela()
         criar_usuario_novo(lista_usuario)
@@ -18,10 +18,10 @@ while True:
         pass
     elif opt_menu =="3":
         while True:
-            menu_inicial()
+            fazer_login()
             op = int(input('Digite sua escolha: '))
             if op == 0:
-                print('Volte sempre!')
+                print('Volte semprmenu_inicial()e!')
                 break
             elif op == 1:
                 pass
