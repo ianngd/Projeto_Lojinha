@@ -1,4 +1,5 @@
 from classes import *
+from main import *
 import getpass
 import time
 import os
@@ -36,9 +37,9 @@ def listar_usuarios_do_sistema(lista_usuarios):
 
 def fazer_login ():
         _nome = input ("Digite seu nome: ")
-        _codigo_de_identificacao = input ("Digite seu código de identificação: ")
+        _matricula = input ("Digite sua matrícula: ")
         _senha = input ("Digite sua senha: ")
-        dono = Gerente (_nome, _codigo_de_identificacao, _senha)
+        dono = Gerente (_nome, _matricula, _senha)
         return dono
     
 def adicionar_produto ():
@@ -50,8 +51,14 @@ def adicionar_produto ():
     # def adicionar_preco ():
 
 def editar_preco ():
-      produto = input("Digite o nome do produto: ")
-
+    produto = input("Digite o nome do produto: ")
+    for i in produtitos:
+        if produto == i.nome:
+            print("\nProduto encontrado!🤙 ")
+            print(f"⭐ {i.produto}:\n-> {i.preco} reais")
+            return i 
+    else:
+        print("Produto n encontrado 😢")
 
 def excluir_produto ():
         pass
