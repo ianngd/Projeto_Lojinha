@@ -9,7 +9,7 @@ def menu_inicial():
 
 
 def listar_produstos(produtos, carrinho):
-    for i in produtos:
+    for i in range(len(produtos)):
         print(f"{i + 1} - {produtos[i]}")
     op = int(input("Escolha um produto: "))
     produto_selecionado = produtos[op - 1]
@@ -32,3 +32,4 @@ def listar_usuarios_do_sistema(lista_usuarios):
     for _ in range(0,lista_usuarios):
         print(f"{lista_usuarios[_].nome}")
     print("+============================+")
+

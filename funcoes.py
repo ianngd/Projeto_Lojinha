@@ -9,6 +9,11 @@ lista_produtos=[]
 lista_usuario=[]
 
 
+def listar_produstos_admin(produtos):
+    for i in range(len(produtos)):
+        print(f"| {i + 1} | {produtos[i].nome} | {produtos[i].quantidade} | R$ {produtos[i].preco}    |")
+    pressione_enter()
+
 def pressione_enter():
     input("Pressione enter para Continuar....")
     limpar_tela()
@@ -47,21 +52,22 @@ def logar_admin():
     _senha = getpass.getpass("Digite a Senha: ")
     if _login == "admin" and _senha == "admin123":
         print("Login com Sucesso!!")
-        massa = True
-        return massa
+        return True 
     else:
         print("Login Inválido!!")
-        massa = False
-        return massa
+        return False       
 
 def painel_adimin():
     op = int(input("[OPÇÃO]-> "))
     if op == 1:
-        listar_produstos(lista_produtos, lista_carrinho)
+        limpar_tela()
+        listar_produstos_admin(lista_produtos)
+        limpar_tela()
     
     elif op == 2:
+        limpar_tela()
         adicionar_produto(lista_produtos)
-
+        limpar_tela()
     elif op == 3:
         pass
 

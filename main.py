@@ -14,7 +14,6 @@ while True:
     elif opt_menu =="2":
         pass
     elif opt_menu =="3":
-        logar_admin()
         if logar_admin() == True:
             while True:
                 menu_admin()
