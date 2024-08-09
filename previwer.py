@@ -14,3 +14,10 @@ def listar_produstos(produtos, carrinho):
     op = int(input("Escolha um produto: "))
     produto_selecionado = produtos[op - 1]
     carrinho.append(produto_selecionado)
+
+def listar_usuarios_do_sistema(lista_usuarios):
+    print("      [USUÁRIOS CRIADOS]")
+    print("+============================+")
+    for _ in range(0,lista_usuarios):
+        print(f"{lista_usuarios[_].nome}")
+    print("+============================+")
