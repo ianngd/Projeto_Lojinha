@@ -1,9 +1,7 @@
 from funcoes import *
 from previwer import *
 
-lista_carrinho=[]
-lista_produtos=[]
-lista_usuario=[]
+
 
 #Main
 while True:
@@ -16,7 +14,15 @@ while True:
     elif opt_menu =="2":
         pass
     elif opt_menu =="3":
-        pass
+        logar_admin()
+        if logar_admin() == True:
+            while True:
+                menu_admin()
+                painel_adimin()
+            
+        else:
+            print("Login Inválido!")
+            pass
     elif opt_menu =="0":
         print("Volte Sempre !!!")
         exit()
