@@ -33,5 +33,38 @@ def listar_usuarios_do_sistema(lista_usuarios):
         print(f"{lista_usuarios[_].nome}")
     print("+============================+")
 
+
+def fazer_login ():
+        _nome = input ("Digite seu nome: ")
+        _codigo_de_identificacao = input ("Digite seu código de identificação: ")
+        _senha = input ("Digite sua senha: ")
+        dono = Gerente (_nome, _codigo_de_identificacao, _senha)
+        return dono
+    
+def adicionar_produto ():
+    produto = input ("Adicionar produto: ")
+    preco = input("Adicionar preço do produto: ")
+    add = Gerente (produto, preco)
+    return add
+
+    # def adicionar_preco ():
+
+def editar_preco ():
+      produto = input("Digite o nome do produto: ")
+
+
+def excluir_produto ():
+        pass
+
+
+
+def listar_produto (lista):
+    for i in lista:
+            print(f'--->{i.produto}''\n')
+            print("\n")  
+      
+
+    # def excluir_produto ():
+
 def adicionar_produto():
     _nome

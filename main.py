@@ -4,6 +4,7 @@ from previwer import *
 lista_carrinho=[]
 lista_produtos=[]
 lista_usuario=[]
+produtitos = []
 
 #Main
 while True:
@@ -16,7 +17,21 @@ while True:
     elif opt_menu =="2":
         pass
     elif opt_menu =="3":
-        pass
+        while True:
+            menu_inicial()
+            op = int(input('Digite sua escolha: '))
+            if op == 0:
+                print('Volte sempre!')
+                break
+            elif op == 1:
+                pass
+            elif op ==2:
+                produtitos.append(fazer_login())
+                while True:
+                    menu_gerente
+                    ops = int(input("Digite sua escolha: "))
+                    if ops == 0:
+                        break
     elif opt_menu =="0":
         print("Volte Sempre !!!")
         exit()
