@@ -6,6 +6,18 @@ def menu_inicial():
 | [3]-Logar como Admin           |
 | [0]-Sair                       |
 +================================+""")
+    
+def menu_gerente():
+    print("""
+     OQUE VC DESEJA FAZER?  
++===============================+
+|       1- Adicionar Produto    |
+|       2- Editar Preço         |
+|       3- Excluir Produto      |
+|       4- Listar Produtos      |
+|       0- Voltar               |
++===============================+
+          """)
 
 
 def listar_produstos(produtos, carrinho):
@@ -32,3 +44,4 @@ def listar_usuarios_do_sistema(lista_usuarios):
     for _ in range(0,lista_usuarios):
         print(f"{lista_usuarios[_].nome}")
     print("+============================+")
+    
