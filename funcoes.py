@@ -71,3 +71,10 @@ def painel_adimin():
     elif op == 0:
         print("Saindo do Sistema!!")
         pass
+ 
+def fazer_login():
+        _nome = input ("Digite seu nome: ")
+        _matricula = input ("Digite sua matrícula: ")
+        _senha = input ("Digite sua senha: ")
+        dono = Gerente (_nome, _matricula, _senha)
+        return dono
