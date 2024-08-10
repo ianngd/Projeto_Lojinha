@@ -1,10 +1,11 @@
 class Cliente():
-    def __init__(self, nome, senha, cpf, telefone,idade ):
+    def __init__(self, nome, senha, cpf, telefone, idade, saldo ):
         self.nome = nome
         self.idade = idade
         self.cpf = cpf
         self.telefone = telefone
         self.senha = senha
+        self.saldo = saldo
 
 
 class Produto():
@@ -12,3 +13,5 @@ class Produto():
         self.nome = nome
         self.quantidade = quantidade
         self.preco = preco
+
+
