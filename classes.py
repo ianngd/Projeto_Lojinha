@@ -23,3 +23,6 @@ class Gerente():
         self.nome= nome
         self.matricula=matricula
         self.senha= senha
+
+
+print("oi")
